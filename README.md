@@ -19,6 +19,8 @@ Have YOU ever wanted to generate random passwords? Well, now you can! This Javas
     
     - a button that allows you to regenerate a new password with the same specifications
     
+    - a button that allows you to choose new specifications to generate passwords for
+    
 ### You can access the code here at:
 https://ten-gou.github.io/week-scheduler/
 
