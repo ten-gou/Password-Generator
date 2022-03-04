@@ -22,5 +22,8 @@ Have YOU ever wanted to generate random passwords? Well, now you can! This Javas
 ### You can access the code here at:
 https://ten-gou.github.io/week-scheduler/
 
-
-![2022-02-17 23_22_25-Password Generator - Brave](https://user-images.githubusercontent.com/30391578/154636639-7df80758-c29e-4dfd-a88f-4973b9351d85.png)
+### Preview Images
+![2022-03-03 20_33_43-Password Generator and 4 more pages - Personal - Microsoft​ Edge](https://user-images.githubusercontent.com/30391578/156700435-f3c6c010-7e9a-4fa5-b3b9-3c7459c8f272.png)
+![2022-03-03 20_37_19-Password Generator and 5 more pages - Personal - Microsoft​ Edge](https://user-images.githubusercontent.com/30391578/156700436-64d81444-2884-40ca-bf5b-8c900509a93e.png)
+![2022-03-03 20_37_30-Password Generator and 5 more pages - Personal - Microsoft​ Edge](https://user-images.githubusercontent.com/30391578/156700439-daa73774-fe8e-47f6-a6e4-bf19e353d357.png)
+![2022-03-03 20_37_35-Password Generator and 5 more pages - Personal - Microsoft​ Edge](https://user-images.githubusercontent.com/30391578/156700440-a2073028-c9e6-41ed-b3db-7f324860f667.png)
