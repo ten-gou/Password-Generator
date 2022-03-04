@@ -50,10 +50,17 @@ function writePassword() {
 
   function generatePassword() {
     var length = passwordLength;
+    FullCharSet = FullCharSet.replace("~!@#$%^&*()_-+=`:;<>?,./{}[]|", '');
+    FullCharSet = FullCharSet.replace("ABCDEFGHIJKLMNOPQRSTUVWXYZ", '');
+    FullCharSet = FullCharSet.replace("abcdefghijklmnopqrstuvwxyz", '');
+    FullCharSet = FullCharSet.replace("1234567890", '');
 
         // Adds Special Characters to the character set
         if (passwordSpecChara == "YES") {
         FullCharSet += SpecCharSet;
+        }
+        else if (passwordSpecChara == "NO") {
+          FullCharSet = FullCharSet.replace("~!@#$%^&*()_-+=`:;<>?,./{}[]|", '');
         }
         else {
         FullCharSet += "";
@@ -62,6 +69,10 @@ function writePassword() {
         // Adds Capitalized Characters to the character set
         if (passwordCapitChara == "YES") {
           FullCharSet += UpprCharSet;
+
+        }
+        else if (passwordCapitChara == "NO") {
+          FullCharSet = FullCharSet.replace("ABCDEFGHIJKLMNOPQRSTUVWXYZ", '');
         }
         else {
           FullCharSet += "";
@@ -71,6 +82,9 @@ function writePassword() {
         if (passwordLowerChara == "YES") {
           FullCharSet += LowerCharSet;
         }
+        else if (passwordLowerChara == "NO") {
+          FullCharSet = FullCharSet.replace("abcdefghijklmnopqrstuvwxyz", '');
+        }
         else {
           FullCharSet += "";
         }
@@ -78,6 +92,9 @@ function writePassword() {
         // Adds numbers to the character set
         if (passwordNubrChara == "YES") {
           FullCharSet += NubrCharSet;
+        }
+        else if (passwordNubrChara == "NO") {
+          FullCharSet = FullCharSet.replace("1234567890", '');
         }
         else {
           FullCharSet += "";
