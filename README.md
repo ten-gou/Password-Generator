@@ -21,6 +21,10 @@ Have YOU ever wanted to generate random passwords? Well, now you can! This Javas
     
     - a button that allows you to choose new specifications to generate passwords for
     
+
+### Tutorial Video
+[A Link to a Tutorial Video on how to use this program](https://drive.google.com/file/d/1y0z3JuHXefWNm2F5U2UUDh22Ka9MIh2e/view?usp=sharing)
+    
 ### You can access the code here at:
 https://ten-gou.github.io/week-scheduler/
 
@@ -29,3 +33,4 @@ https://ten-gou.github.io/week-scheduler/
 ![2022-03-03 20_37_19-Password Generator and 5 more pages - Personal - Microsoft​ Edge](https://user-images.githubusercontent.com/30391578/156700436-64d81444-2884-40ca-bf5b-8c900509a93e.png)
 ![2022-03-03 20_37_30-Password Generator and 5 more pages - Personal - Microsoft​ Edge](https://user-images.githubusercontent.com/30391578/156700439-daa73774-fe8e-47f6-a6e4-bf19e353d357.png)
 ![2022-03-03 20_37_35-Password Generator and 5 more pages - Personal - Microsoft​ Edge](https://user-images.githubusercontent.com/30391578/156700440-a2073028-c9e6-41ed-b3db-7f324860f667.png)
+
