@@ -16,7 +16,7 @@ const params = () => {
   } 
   else {
       paramvalues.push({'length': 'invalid input'});
-      throw new Error('invalid input!');
+      error();
   }
 
   //spec chara
@@ -32,7 +32,7 @@ const params = () => {
   }
   else {
       paramvalues.push({'spec': 'invalid input'});
-      throw new Error('invalid input!');
+      error();
   }
 
   //cap chara
@@ -48,7 +48,7 @@ const params = () => {
   }
   else {
       paramvalues.push({'cap': 'invalid input'});
-      throw new Error('invalid input!');
+      error();
   }
 
   //low chara
@@ -64,7 +64,7 @@ const params = () => {
   }
   else {
       paramvalues.push({'low': 'invalid input'});
-      throw new Error('invalid input!');
+      error();
   }
 
   //nums
@@ -80,13 +80,13 @@ const params = () => {
   }
   else {
       paramvalues.push({'num': 'invalid input'});
-      throw new Error('invalid input!');
+      error();
   }
 
-  return paramvalues;
+  return check(paramvalues);
 };
 
-//password generating fxn
+//checks is password possible & no invalid inputs
 const check = () => {
 if (paramvalues[0].length == 'invalid input' || paramvalues[1].spec == 'invalid input' || paramvalues[2].cap == 'invalid input' || paramvalues[3].low == 'invalid input' || paramvalues[4].num == 'invalid input') {
   window.alert('Invalid input detected! Please re-enter the requirements again!');
@@ -99,11 +99,13 @@ else {
 }
 };
 
+//generate password fxn
 const createPassword = () => {
   var charset = [];
-  var trueCheck = 0;
+  var trueCheck = 0; // tracks how many specs are true
   var str = '';
 
+  //individual checks to add the type to the charset & guarantee a character in the string is of said type
   if (paramvalues[1].spec == true) {
     specChar = '~!@#$%^&*()_-+=`:;<>?,./{}[]|",';
     charset.push(specChar);
@@ -129,15 +131,23 @@ const createPassword = () => {
     trueCheck++;
   }
 
+  //remaining characters in the str generated here
   for (i=0; i<length-trueCheck; i++) {
     category = Math.floor(Math.random() * trueCheck);
     str += charset[category].charAt(Math.floor(Math.random()*charset[category].length));
   }
   
+  //sets the placeholder value of the passwordBoxEl to the output str
   passwordBoxEl.placeholder = str;
 }
 
+const error = () => {
+  throw new Error('invalid input!');
+}
+
+//calls up the params fxn, then generates a password on startup of the webpage
 params();
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", check);
