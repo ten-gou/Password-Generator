@@ -1,6 +1,11 @@
 
 # Password Generator Website
 Made by Libin Wang, this program is considered to be under Public Domain License.
+<div align="center">
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5 Badge"/>
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3 Badge"/>
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E" alt="JavaScript Badge"/>
+</div>
 
 ## Table of Contents
 [*1. Description*](#1-description)
