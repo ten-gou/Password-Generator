@@ -101,7 +101,6 @@ else {
 
 const createPassword = () => {
   var charset = [];
-  var length2 = paramvalues[0].length;
   var trueCheck = 0;
   var str = '';
 
@@ -130,12 +129,11 @@ const createPassword = () => {
     trueCheck++;
   }
 
-  for (i=0; i<length2-trueCheck; i++) {
+  for (i=0; i<length-trueCheck; i++) {
     category = Math.floor(Math.random() * trueCheck);
     str += charset[category].charAt(Math.floor(Math.random()*charset[category].length));
   }
-
-  console.log(str);
+  
   passwordBoxEl.placeholder = str;
 }
 
